@@ -21,3 +21,4 @@ Homestead.json
 
 # some secrets
 config/services.php
+eypman/config/services.php
