@@ -43,9 +43,22 @@
     <li class="breadcrumb-item">@include('breadcrumbs.user')</li>
     <li class="breadcrumb-item active">{{ $platform->platform_name }}</li>
   </ol></h1>
-  <p>{{ $platform->description }}</p>
-  <p>{{ $platform->eyp_userid }} / {{ $platform->eyp_magic_hash }} </p>
-  <p>Platform ready</p>
+  <button class="float-right btn-info btn-sm" onclick="toggleinstructions()">Configuration instructions</button>
+  <div id="instructions" style="display: none">
+    <h2>Instructions</h2>
+    @include('instructions.configure_platform')
+    <hr />
+  </div>
+  <script>
+  function toggleinstructions() {
+      var x = document.getElementById("instructions");
+      if (x.style.display === "none") {
+          x.style.display = "block";
+      } else {
+          x.style.display = "none";
+      }
+  }
+  </script>
   @if(count($platform->environments)=='')
   <h3>No environments defined</h3>
   @else
@@ -56,15 +69,15 @@
     @endforeach --}}
   </ul>
   @endif
-  <h3>Server groups</h3>
-  <ul>
-    <li>...</li>
-  </ul>
   <h3>Server types</h3>
   <ul>
     <li>...</li>
   </ul>
   <h3>Nodes</h3>
+  <ul>
+    <li>...</li>
+  </ul>
+  <h3>Server groups</h3>
   <ul>
     <li>...</li>
   </ul>
