@@ -8,7 +8,7 @@
                   <div class="card-header">Home</div>
 
                   <div class="card-body">
-                      sysadmins
+                      <center><img src="/img/portal.gif" /></center>
                   </div>
               </div>
           </div>
