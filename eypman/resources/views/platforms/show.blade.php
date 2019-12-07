@@ -32,9 +32,7 @@
     <div class="dropdown" style="display: inline-block;">
       <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Actions <span class="caret"></span></button>
       <ul class="dropdown-menu" role="menu">
-        {{-- <li><a href="{{ route('environments.create', [$user->slug, $platform->platform_name]) }}">Create environment</a></li>
-        <li><a href="{{ route('servertypes.create', [$user->slug, $platform->platform_name]) }}">Create server type</a></li>
-        <li><a href="{{ route('servergroups.create', [$user->slug, $platform->platform_name]) }}">Create server group</a></li> --}}
+        <li><a href="{{ route('environments.create', [$user->slug, $platform->platform_name]) }}">Create environment</a></li>
       </ul>
     </div>
   </div>

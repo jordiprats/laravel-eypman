@@ -25,6 +25,8 @@ Route::prefix('/controllers')->group(function () {
   Route::resource('/orgs', 'OrganizationController');
   Route::resource('/repos', 'RepoController');
   Route::resource('/platforms', 'PlatformController');
+  Route::resource('/environments', 'EnvironmentController');
+  Route::resource('/puppet-settings', 'PuppetSettingController');
   Route::resource('/reporeleases', 'RepoReleaseController');
 });
 

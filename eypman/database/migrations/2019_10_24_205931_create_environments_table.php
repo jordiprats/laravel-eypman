@@ -19,6 +19,7 @@ class CreateEnvironmentsTable extends Migration
             $table->string('slug');
             $table->string('description');
             $table->integer('platform_id')->references('id')->on('platforms');
+            $table->integer('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }
