@@ -59,16 +59,16 @@
       }
   }
   </script>
-  @if(count($platform->environments)=='')
+  {{-- @if(count($platform->environments)=='') --}}
   <h3>No environments defined</h3>
-  @else
+  {{-- @else --}}
     <h3>Environments</h3>
     <ul>
     {{-- @foreach ($platform->environments as $environment)
     <li><a href="{{ route('show.eyp.user.platform.env', ['user' => $user->slug, 'platform' => $platform->slug, 'environment' => $environment->slug]) }}">{{ $environment->environment_name }}</a></li>
     @endforeach --}}
   </ul>
-  @endif
+  {{-- @endif --}}
   <h3>Server types</h3>
   <ul>
     <li>...</li>

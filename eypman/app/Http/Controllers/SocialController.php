@@ -8,36 +8,34 @@ use Socialite;
 use App\User;
 class SocialController extends Controller
 {
-    public function redirect($provider)
-    {
-        return Socialite::driver($provider)->redirect();
-    }
+  public function redirect($provider)
+  {
+    return Socialite::driver($provider)->redirect();
+  }
 
-    public function callback($provider)
-    {
+  public function callback($provider)
+  {
+    $getInfo = Socialite::driver($provider)->user();
 
-        $getInfo = Socialite::driver($provider)->user();
+    $user = $this->createUser($getInfo,$provider);
 
-        $user = $this->createUser($getInfo,$provider);
+    auth()->login($user);
 
-        auth()->login($user);
+    return redirect()->to('/home');
+  }
+ function createUser($getInfo,$provider)
+ {
+ $user = User::where('provider_id', $getInfo->id)->first();
 
-        return redirect()->to('/home');
-
-    }
-   function createUser($getInfo,$provider){
-
-     $user = User::where('provider_id', $getInfo->id)->first();
-
-     if (!$user) {
-         $user = User::create([
-            'name'        => $getInfo->name,
-            'email'       => $getInfo->email,
-            'slug'        => str_slug($getInfo->nickname, "-"),
-            'provider'    => $provider,
-            'provider_id' => $getInfo->id
-        ]);
-      }
-      return $user;
-   }
+ if (!$user) {
+     $user = User::create([
+        'name'        => $getInfo->name,
+        'email'       => $getInfo->email,
+        'slug'        => str_slug($getInfo->nickname, "-"),
+        'provider'    => $provider,
+        'provider_id' => $getInfo->id
+    ]);
+  }
+  return $user;
+ }
 }
