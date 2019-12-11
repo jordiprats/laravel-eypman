@@ -26,7 +26,7 @@
                         </div>
 
                         <div class="form-group">
-                          <label for="disponibilitatlabel">disponibilitat (1 dia)</label>
+                          <label for="disponibilitatlabel">disponibilitat</label>
                           <input type="number" class="form-control" id="disponibilitat" aria-describedby="disponibilitatHelp" disabled>
                           <small id="disponibilitatHelp" class="form-text text-muted">preu per dia</small>
                         </div>
