@@ -14,7 +14,7 @@
                         <div class="form-group">
                           <label for="salarilabel">salari base</label>
                           <input type="number" class="form-control" id="salari" aria-describedby="salariHelp" value="250000" step="500">
-                          <small id="salariHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                          <small id="salariHelp" class="form-text text-muted">salari brut anual</small>
                         </div>
 
                         <hr />
@@ -22,13 +22,13 @@
                         <div class="form-group">
                           <label for="guardialabel">hora de feina</label>
                           <input type="number" class="form-control" id="guardia" aria-describedby="guardiaHelp" disabled>
-                          <small id="guardiaHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                          <small id="guardiaHelp" class="form-text text-muted">preu per hora</small>
                         </div>
 
                         <div class="form-group">
                           <label for="disponibilitatlabel">disponibilitat (1 dia)</label>
                           <input type="number" class="form-control" id="disponibilitat" aria-describedby="disponibilitatHelp" disabled>
-                          <small id="disponibilitatHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                          <small id="disponibilitatHelp" class="form-text text-muted">preu per dia</small>
                         </div>
                     </form>
                   </div>
