@@ -50,13 +50,13 @@
                         <div class="form-group">
                           <label for="totalguardialabel">total a cobrar per hores de guardia</label>
                           <input type="number" class="form-control" id="totalguardia" aria-describedby="totalguardiaHelp" disabled>
-                          <small id="totalguardiaHelp" class="form-text text-muted">total a cobrar</small>
+                          <small id="totalguardiaHelp" class="form-text text-muted">brut</small>
                         </div>
 
                         <div class="form-group">
                           <label for="totaldisponibilitatlabel">total a cobrar per dies de disponibilitat</label>
                           <input type="number" class="form-control" id="totaldisponibilitat" aria-describedby="totaldisponibilitatHelp" disabled>
-                          <small id="totaldisponibilitatHelp" class="form-text text-muted">total a cobrar</small>
+                          <small id="totaldisponibilitatHelp" class="form-text text-muted">brut</small>
                         </div>
                     </form>
                   </div>
