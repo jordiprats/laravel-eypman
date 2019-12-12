@@ -13,7 +13,7 @@
                       <form>
                         <div class="form-group">
                           <label for="salarilabel">salari base</label>
-                          <input type="number" class="form-control" id="salari" aria-describedby="salariHelp" value="250000" step="500">
+                          <input type="number" class="form-control" id="salari" aria-describedby="salariHelp" value="25000" step="500">
                           <small id="salariHelp" class="form-text text-muted">salari brut anual</small>
                         </div>
 
