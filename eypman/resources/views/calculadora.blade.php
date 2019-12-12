@@ -6,7 +6,7 @@
       <div class="row justify-content-center">
           <div class="col-md-8">
               <div class="card">
-                  <div class="card-header">calculadora preus</div>
+                  <div class="card-header">calculadora extres</div>
 
                   <div class="card-body">
                       <center><img src="/img/money_paid_loop.gif" /></center>
