@@ -58,6 +58,14 @@
                           <input type="number" class="form-control" id="totaldisponibilitat" aria-describedby="totaldisponibilitatHelp" disabled>
                           <small id="totaldisponibilitatHelp" class="form-text text-muted">brut</small>
                         </div>
+
+                        <hr />
+
+                        <div class="form-group">
+                          <label for="totallabel">total a cobrar</label>
+                          <input type="number" class="form-control" id="total" aria-describedby="totalHelp" disabled>
+                          <small id="totalHelp" class="form-text text-muted">brut</small>
+                        </div>
                     </form>
                   </div>
               </div>
@@ -75,12 +83,15 @@
 
       var total_guardia = preu_guardia * $('#horesguardia').val();
       var total_disponibilitat = preu_disponibilitat * $('#diesdisponibilitat').val();
+      var total_total = total_guardia+total_disponibilitat;
 
       $('#guardia').val(preu_guardia.toFixed(2));
       $('#disponibilitat').val(preu_disponibilitat.toFixed(2));
 
       $('#totalguardia').val(total_guardia.toFixed(2));
       $('#totaldisponibilitat').val(total_disponibilitat.toFixed(2));
+
+      $('#total').val(total_total.toFixed(2));
     }
 
     $("#salari").change(function() {
